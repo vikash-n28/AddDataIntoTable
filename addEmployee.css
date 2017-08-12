@@ -1,0 +1,110 @@
+ /*new employee table*/
+.tableContainer{
+  margin: auto;
+  margin-top: 10px;
+  top:0;
+  text-align: center;
+}
+
+.employeeTable thead{
+    background-color: #4C9EF0;
+    color: white;
+}
+
+.disable{
+   pointer-events: none;
+}
+
+
+.wrong{
+    background-color: #FFCDD2 !important;
+}
+
+.success{
+  background-color: #B2DFDB !important;
+}
+
+.bodyData1{
+    background-color: #fff;
+}
+
+.bodyData2{
+    background-color: #D1DEEC;;
+}
+
+.employeeInput{
+    border:none;
+    outline:none
+}
+
+.md-datepicker-button {
+  display: none;
+}
+
+.md-datepicker-input-container {
+    margin-left: 0 !important;
+    border-width: 0 0 0px !important;
+}
+
+md-input-container .md-input{
+ border-width: 0 0 0px !important;
+ text-align: center;
+}
+
+md-select {
+    border-bottom: 0px solid;
+    padding-bottom: 0;
+}
+
+md-button{
+    cursor: pointer;
+}
+
+.md-select-value{
+    border-bottom-style: none;
+    border-width: 0 0 0px !important;
+}
+
+md-input-container.md-input-focused label {
+  display: none
+}
+
+md-input-container .md-errors-spacer{
+    min-width: 0px !important;
+    min-height: 0px !important;
+}
+
+md-select{
+    margin: 0px 0 0px !important;
+}
+
+/*new employee table*/
+.employeeTable{
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* border: 1px solid rgba(0,0,0,0.87);  */
+}
+
+.employeeTable td {
+    width: 15%;
+}
+
+/*new employee table Row */
+.employeeRow{
+  border: solid;
+  border-width: 1px 0;
+}
+
+/*new employee input container*/
+md-input-container{
+    margin:0px 0px;
+    text-align: center;
+}
+/*new employee input container*/
+md-input-container .md-input{
+    border-color:none;
+}
+/*input box placeholder disable after focus*/
+md-input-container.md-input-focused label:not(.md-no-float), md-input-container.md-input-has-placeholder label:not(.md-no-float), md-input-container.md-input-has-value label:not(.md-no-float) {
+     transform: translate3d(0,6px,0) scale(0);
+}

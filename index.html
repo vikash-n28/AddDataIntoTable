@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="addEmployee.css">
+</head>
+
+<body ng-app="myApp" ng-controller="addEmployeeController" ng-cloak>
+
+  <md-content>
+    <md-toolbar class="md-table-toolbar md-default">
+      <div class="md-toolbar-tools">
+        <span>Add New Employee</span>
+      </div>
+    </md-toolbar>
+    <div layout="column">
+
+      <!--save button-->
+      <div layout="row " layout-align="end center ">
+        <md-button aria-label="add" class="md-raised md-primary" ng-click="storeEmployee()" ng-disabled="saveEmployeeDisable">
+          Save
+        </md-button>
+      </div>
+      <div class="tableContainer" layout="row" layout-align="center center" flex>
+        <md-card>
+          <table class="employeeTable" cellpadding="10">
+            <!--header data-->
+            <thead>
+              <tr class="employeeRow">
+                <th><span>Start Date</span></th>
+                <th><span>Email Address</span></th>
+                <th><span>Hiring City</span></th>
+                <th><span>Employee Type</span></th>
+                <th><span>Referred</span></th>
+                <th><span>Salary</span></th>
+              </tr>
+            </thead>
+
+            <!-- <form name="sendInvite"> -->
+            <tbody ng-repeat="employee in employeeDetailsArray track by $index">
+              <tr ng-class="{'bodyData1':$odd, 'bodyData2':$even, 'wrong':employee.status == 'wrong', 'success':employee.status == 'correct', 'disable':employee.block}">
+                  <!--date picker-->
+                  <td id="datepicker_{{$index}}">
+                    <md-datepicker ng-model="employee.startDate" ng-value="startDate" md-placeholder="YYYY/MM/DD" md-hide-icons="calendar" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this,'startDate')" ng-required="true"></md-datepicker>
+                  </td>
+
+                  <!--email address-->
+                  <td id="email_{{$index}}">
+                    <md-input-container ng-class="colorObject['emailAddress'+{{$index}}]">
+                      <input type="text" ng-model="employee.emailAddress" placeholder="someone@domain.com" md-no-asterisk="true" ng-value="employee.emailAddress" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this,'emailAddress')"
+                        ng-focus="removeValidate(this,'emailAddress')" required>
+                    </md-input-container>
+                  </td>
+
+                  <!--hiring city-->
+                  <td id=" city_{{$index}} ">
+                    <md-select ng-model="employee.hiringCity " md-no-asterisk="true" placeholder="city" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this)" required>
+                      <md-option ng-repeat="cityData in employeeObject.data.cityData" ng-bind="cityData.city" ng-value="cityData.city"></md-option>
+                    </md-select>
+                  </td>
+
+                  <!--program type-->
+                  <td id="program_{{$index}} ">
+                    <md-select ng-model="employee.employeeType" md-no-asterisk="true" placeholder="employee type" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this)" required>
+                      <md-option ng-repeat="currentProgram in employeeObject.data.employeeTypeData" ng-bind="currentProgram" ng-value="currentProgram"></md-option>
+                    </md-select>
+                  </td>
+
+                  <!--referred By-->
+                  <td id="refer_{{$index}} ">
+                    <md-select ng-model="employee.referredBy" md-no-asterisk="true" placeholder="referedBy" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this)" required>
+                      <md-option ng-repeat="referred in referredObject.data.employeeData" ng-bind="referred.fullName" ng-value="referred.fullName"></md-option>
+                    </md-select>
+                  </td>
+
+                  <!--salary-->
+                  <td id="salary_{{$index}}">
+                    <md-input-container ng-class="colorObject['salary'+{{$index}}]">
+                      <input type="text " ng-model="employee.salary" placeholder="e.g. 150,000" md-no-asterisk="true" ng-value="employee.salary" ng-keydown="($event.keyCode==13)?$event.target.blur():$event.stopPropagation()" ng-blur="validation(this,'salary')" ng-focus="removeValidate(this,'salary')"
+                        required>
+                    </md-input-container>
+                  </td>
+              </tr>
+            </tbody>
+
+          </table>
+        </md-card>
+        <!--row addition button-->
+        <div layout-align="end center">
+          <md-button ng-disabled="addEmpoyeeDisable" aria-label="add " class="md-fab md-raised" ng-click="addEmployeeData()">
+            <md-icon md-svg-src="ic_add_black_24px.svg "></md-icon>
+          </md-button>
+        </div>
+      </div>
+      <!-- </form> -->
+    </div>
+  </md-content>
+
+</body>
+<script src="node_modules/angular/angular.min.js "></script>
+<script src="node_modules/angular-aria/angular-aria.min.js "></script>
+<script src="node_modules/angular-animate/angular-animate.min.js "></script>
+<script src="node_modules/angular-material/angular-material.min.js "></script>
+<script src="app.js "></script>
+<script src="addEmployee.controller.js "></script>
+<script src="addEmployee.service.js "></script>
+
+</html>

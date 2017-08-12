@@ -1,0 +1,417 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'angular-ui-router' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json angularProject@0.0.0 No description
+5 warn package.json angularProject@0.0.0 No repository field.
+6 warn package.json angularProject@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'angular-ui-router', null ]
+9 verbose cache add name=undefined spec="angular-ui-router" args=["angular-ui-router",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'angular-ui-router',
+10 verbose parsed url   path: 'angular-ui-router',
+10 verbose parsed url   href: 'angular-ui-router' }
+11 silly lockFile ff5f9edb-angular-ui-router angular-ui-router
+12 verbose lock angular-ui-router /home/bridgeit/.npm/ff5f9edb-angular-ui-router.lock
+13 silly lockFile ff5f9edb-angular-ui-router angular-ui-router
+14 silly lockFile ff5f9edb-angular-ui-router angular-ui-router
+15 verbose addNamed [ 'angular-ui-router', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile f588af00-angular-ui-router angular-ui-router@
+18 verbose lock angular-ui-router@ /home/bridgeit/.npm/f588af00-angular-ui-router.lock
+19 silly addNameRange { name: 'angular-ui-router', range: '*', hasData: false }
+20 verbose url raw angular-ui-router
+21 verbose url resolving [ 'https://registry.npmjs.org/', './angular-ui-router' ]
+22 verbose url resolved https://registry.npmjs.org/angular-ui-router
+23 info trying registry request attempt 1 at 19:17:04
+24 verbose etag "59518dc6-10021"
+25 http GET https://registry.npmjs.org/angular-ui-router
+26 http 304 https://registry.npmjs.org/angular-ui-router
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sat, 05 Aug 2017 13:47:06 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"59518dc6-10021"',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-ams4149-AMS',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1501940827.794477,VS0,VE21',
+27 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+28 verbose etag angular-ui-router from cache
+29 silly addNameRange number 2 { name: 'angular-ui-router', range: '*', hasData: true }
+30 silly addNameRange versions [ 'angular-ui-router',
+30 silly addNameRange   [ '0.2.7',
+30 silly addNameRange     '0.2.8',
+30 silly addNameRange     '0.2.10',
+30 silly addNameRange     '0.2.11',
+30 silly addNameRange     '0.2.13',
+30 silly addNameRange     '0.2.14',
+30 silly addNameRange     '0.2.15',
+30 silly addNameRange     '0.2.16',
+30 silly addNameRange     '0.2.17',
+30 silly addNameRange     '0.2.18',
+30 silly addNameRange     '1.0.0-alpha.1',
+30 silly addNameRange     '1.0.0-alpha.2',
+30 silly addNameRange     '1.0.0-alpha.3',
+30 silly addNameRange     '1.0.0-alpha.4',
+30 silly addNameRange     '1.0.0-alpha.5',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '1.0.0-beta.1',
+30 silly addNameRange     '1.0.0-beta.2',
+30 silly addNameRange     '1.0.0-beta.3',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '1.0.0-rc.1',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.3' ] ]
+31 verbose addNamed [ 'angular-ui-router', '1.0.3' ]
+32 verbose addNamed [ '1.0.3', '1.0.3' ]
+33 silly lockFile 095cb213-angular-ui-router-1-0-3 angular-ui-router@1.0.3
+34 verbose lock angular-ui-router@1.0.3 /home/bridgeit/.npm/095cb213-angular-ui-router-1-0-3.lock
+35 warn deprecated angular-ui-router@1.0.3: This npm package 'angular-ui-router' has been renamed to '@uirouter/angularjs'. Please update your package.json. See https://ui-router.github.io/blog/uirouter-scoped-packages/
+36 silly lockFile 095cb213-angular-ui-router-1-0-3 angular-ui-router@1.0.3
+37 silly lockFile 095cb213-angular-ui-router-1-0-3 angular-ui-router@1.0.3
+38 silly lockFile f588af00-angular-ui-router angular-ui-router@
+39 silly lockFile f588af00-angular-ui-router angular-ui-router@
+40 silly resolved [ { name: 'angular-ui-router',
+40 silly resolved     description: 'State-based routing for AngularJS 1.x',
+40 silly resolved     version: '1.0.3',
+40 silly resolved     scripts:
+40 silly resolved      { clean: 'shx rm -rf lib lib-esm _doc build release *.log',
+40 silly resolved        build: 'tsc && tsc -m es6 --outDir lib-esm && npm run fixdts',
+40 silly resolved        fixdts: 'dts-downlevel \'lib/**/*.d.ts\' \'lib-esm/**/*.d.ts\'',
+40 silly resolved        package: 'npm run clean && npm run build && npm run bundle',
+40 silly resolved        bundle: 'npm run bundle_router && npm run bundle_monolithic_router && npm run bundle_events && npm run bundle_resolve',
+40 silly resolved        bundle_monolithic_router: 'rollup -c --environment ROUTER,MONOLITHIC  && rollup -c --environment ROUTER,MINIFY,MONOLITHIC',
+40 silly resolved        bundle_router: 'rollup -c --environment ROUTER  && rollup -c --environment ROUTER,MINIFY',
+40 silly resolved        bundle_events: 'rollup -c --environment EVENTS  && rollup -c --environment EVENTS,MINIFY',
+40 silly resolved        bundle_resolve: 'rollup -c --environment RESOLVE && rollup -c --environment RESOLVE,MINIFY',
+40 silly resolved        prepare: 'npm run package',
+40 silly resolved        install: 'node migrate/migratewarn.js',
+40 silly resolved        noimplicitany: 'tsc --noEmit --noImplicitAny --moduleResolution node --target es6 test/noimplicitany.ts',
+40 silly resolved        test: 'npm run test:integrate',
+40 silly resolved        'test:ng12': 'karma start --ngversion 1.2',
+40 silly resolved        'test:ng13': 'karma start --ngversion 1.3',
+40 silly resolved        'test:ng14': 'karma start --ngversion 1.4',
+40 silly resolved        'test:ng15': 'karma start --ngversion 1.5',
+40 silly resolved        'test:ng16': 'karma start --ngversion 1.6',
+40 silly resolved        'test:integrate': 'tsc && npm run noimplicitany && npm run test:ng16 && npm run test:ng15 && npm run test:ng14 && npm run test:ng13 && npm run test:ng12',
+40 silly resolved        watch: 'karma start --singleRun=false --autoWatch=true --autoWatchInterval=1',
+40 silly resolved        debug: 'karma start --singleRun=false --autoWatch=true --autoWatchInterval=1 --browsers=Chrome',
+40 silly resolved        docs: './scripts/docs.js',
+40 silly resolved        publishdocs: 'node scripts/publishdocs.js',
+40 silly resolved        artifacts: 'node scripts/artifact_tagging.js' },
+40 silly resolved     homepage: 'https://ui-router.github.io',
+40 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+40 silly resolved     maintainers: [ [Object] ],
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'https://github.com/angular-ui/ui-router.git' },
+40 silly resolved     bugs: { url: 'https://github.com/angular-ui/ui-router/issues' },
+40 silly resolved     engines: { node: '>=4.0.0' },
+40 silly resolved     license: 'MIT',
+40 silly resolved     main: 'lib/index.js',
+40 silly resolved     'jsnext:main': 'lib-esm/index.js',
+40 silly resolved     typings: 'lib/index.d.ts',
+40 silly resolved     dependencies: { '@uirouter/core': '5.0.3' },
+40 silly resolved     peerDependencies: { angular: '>=1.2.0' },
+40 silly resolved     devDependencies:
+40 silly resolved      { '@types/angular': '^1.5.14',
+40 silly resolved        '@types/angular-animate': '^1.5.5',
+40 silly resolved        '@types/angular-mocks': '^1.5.5',
+40 silly resolved        '@types/jasmine': '^2.2.34',
+40 silly resolved        '@types/jquery': '^1.10.31',
+40 silly resolved        'awesome-typescript-loader': '3.0.0-beta.10',
+40 silly resolved        'babel-core': '^5.8.14',
+40 silly resolved        clone: '^1.0.2',
+40 silly resolved        'conventional-changelog': '^1.1.0',
+40 silly resolved        'conventional-changelog-cli': '^1.1.1',
+40 silly resolved        'dts-downlevel': '^0.3.0',
+40 silly resolved        glob: '^7.0.5',
+40 silly resolved        'jasmine-core': '^2.4.1',
+40 silly resolved        karma: '^1.2.0',
+40 silly resolved        'karma-chrome-launcher': '~0.1.0',
+40 silly resolved        'karma-coverage': '^0.5.3',
+40 silly resolved        'karma-jasmine': '^1.0.2',
+40 silly resolved        'karma-phantomjs-launcher': '^1.0.2',
+40 silly resolved        'karma-script-launcher': '~0.1.0',
+40 silly resolved        'karma-sourcemap-loader': '^0.3.7',
+40 silly resolved        'karma-systemjs': '^0.7.2',
+40 silly resolved        'karma-webpack': '^1.8.0',
+40 silly resolved        lodash: '^4.5.1',
+40 silly resolved        'readline-sync': '^1.4.5',
+40 silly resolved        'remap-istanbul': '^0.6.3',
+40 silly resolved        'replace-in-file': '^2.0.3',
+40 silly resolved        rollup: '^0.38.0',
+40 silly resolved        'rollup-plugin-node-resolve': '^2.0.0',
+40 silly resolved        'rollup-plugin-progress': '^0.1.0',
+40 silly resolved        'rollup-plugin-sourcemaps': '^0.4.1',
+40 silly resolved        'rollup-plugin-uglify': '^1.0.1',
+40 silly resolved        'rollup-plugin-visualizer': '^0.1.5',
+40 silly resolved        shelljs: '^0.7.0',
+40 silly resolved        shx: '^0.1.4',
+40 silly resolved        systemjs: '^0.18.4',
+40 silly resolved        tslint: '^5.1.0',
+40 silly resolved        typedoc: '~0.5.0',
+40 silly resolved        'typedoc-plugin-external-module-name': '^1.0.2',
+40 silly resolved        'typedoc-plugin-internal-external': '^1.0.0',
+40 silly resolved        'typedoc-plugin-ui-router': '^1.0.0',
+40 silly resolved        typescript: '^2.1.4',
+40 silly resolved        'ui-router-typedoc-themes': '^1.0.1',
+40 silly resolved        watch: '^0.18.0',
+40 silly resolved        webpack: '1.x',
+40 silly resolved        'webpack-dev-server': '1.x',
+40 silly resolved        yargs: '^4.2.0' },
+40 silly resolved     readme: '# AngularUI Router &nbsp;[![Build Status](https://travis-ci.org/angular-ui/ui-router.svg?branch=master)](https://travis-ci.org/angular-ui/ui-router)\n\n**Note: this is the Angular 1.x source for UI-Router version 1.0.  If you are looking for the source for UI-Router \nversion 0.2.x, it can be found [here](https://github.com/angular-ui/ui-router/tree/legacy)**\n\n---\n\n\n#### The de-facto solution to flexible routing in angular\n---\n**[Tutorials](https://ui-router.github.io/tutorials/)** |\n**[API Docs](https://ui-router.github.io/docs/latest/)** |\n**[Download stable](http://unpkg.com/@uirouter/angularjs@latest/release/angular-ui-router.js)** (or **[Minified](http://unpkg.com/angular-ui-router@latest/release/angular-ui-router.min.js)**) **|**\n**[Guide](https://github.com/angular-ui/ui-router/wiki) |**\n**[Sample App](http://ui-router.github.io/resources/sampleapp/) |**\n**[FAQ](https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions) |**\n**[Report an Issue](https://github.com/angular-ui/ui-router/blob/master/CONTRIBUTING.md#report-an-issue) |**\n**[Contribute](https://github.com/angular-ui/ui-router/blob/master/CONTRIBUTING.md#contribute) |**\n**[Help!](http://stackoverflow.com/questions/ask?tags=angularjs,angular-ui-router) |**\n\n---\n\nAngular UI-Router is a client-side [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) \nrouting framework for [AngularJS](http://angularjs.org).  \n  \nRouting frameworks for SPAs update the browser\'s URL as the user navigates through the app.  Conversely, this allows \nchanges to the browser\'s URL to drive navigation through the app, thus allowing the user to create a bookmark to a \nlocation deep within the SPA.\n\nUI-Router applications are modeled as a hierarchical tree of states. UI-Router provides a \n[*state machine*](https://en.wikipedia.org/wiki/Finite-state_machine) to manage the transitions between those \napplication states in a transaction-like manner. \n\n## Get Started\n\n\n- [UI-Router for Angular 1](https://ui-router.github.io/ng1)\n- [UI-Router for Angular 2](https://ui-router.github.io/ng2)\n- [UI-Router for React](https://ui-router.github.io/react)\n\n## Resources\n\n* [In-Depth Guide](https://github.com/angular-ui/ui-router/wiki)\n* [Slides comparing ngRoute to ui-router](http://slid.es/timkindberg/ui-router#/)\n* [UI-Router Extras / Addons for legacy (0.x)](http://christopherthielen.github.io/ui-router-extras/#/home) (@christopherthielen)\n \n### Videos\n\n* [Introduction Video](https://egghead.io/lessons/angularjs-introduction-ui-router) (egghead.io)\n* [Tim Kindberg on Angular UI-Router](https://www.youtube.com/watch?v=lBqiZSemrqg)\n* [Activating States](https://egghead.io/lessons/angularjs-ui-router-activating-states) (egghead.io)\n* [Learn Angular.js using UI-Router](http://youtu.be/QETUuZ27N0w) (LearnCode.academy)\n\n## Reporting issues and Contributing\n\nPlease read our [Contributor guidelines](CONTRIBUTING.md) before reporting an issue or creating a pull request.\n',
+40 silly resolved     readmeFilename: 'README.md',
+40 silly resolved     _id: 'angular-ui-router@1.0.3',
+40 silly resolved     _from: 'angular-ui-router@' } ]
+41 info install angular-ui-router@1.0.3 into /home/bridgeit/Documents/angularProject/addEmployee
+42 info installOne angular-ui-router@1.0.3
+43 warn engine angular-ui-router@1.0.3: wanted: {"node":">=4.0.0"} (current: {"node":"v0.10.25","npm":"1.3.10"})
+44 info /home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router unbuild
+45 verbose tar unpack /home/bridgeit/.npm/angular-ui-router/1.0.3/package.tgz
+46 silly lockFile 48a1a51b-e-node-modules-angular-ui-router tar:///home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router
+47 verbose lock tar:///home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router /home/bridgeit/.npm/48a1a51b-e-node-modules-angular-ui-router.lock
+48 silly lockFile b4ee228f-ular-ui-router-1-0-3-package-tgz tar:///home/bridgeit/.npm/angular-ui-router/1.0.3/package.tgz
+49 verbose lock tar:///home/bridgeit/.npm/angular-ui-router/1.0.3/package.tgz /home/bridgeit/.npm/b4ee228f-ular-ui-router-1-0-3-package-tgz.lock
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm extractEntry LICENSE
+54 silly gunzTarPerm extractEntry rollup.config.js
+55 silly gunzTarPerm extractEntry lib-esm/services.js
+56 silly gunzTarPerm extractEntry lib-esm/injectables.js
+57 silly gunzTarPerm extractEntry lib-esm/interface.js
+58 silly gunzTarPerm extractEntry lib-esm/locationServices.js
+59 silly gunzTarPerm extractEntry lib-esm/index.js
+60 silly gunzTarPerm extractEntry lib-esm/stateFilters.js
+61 silly gunzTarPerm extractEntry lib-esm/stateProvider.js
+62 silly gunzTarPerm extractEntry lib-esm/templateFactory.js
+63 silly gunzTarPerm extractEntry lib-esm/urlRouterProvider.js
+64 silly gunzTarPerm extractEntry lib-esm/viewScroll.js
+65 silly gunzTarPerm extractEntry lib-esm/angular.js
+66 silly gunzTarPerm extractEntry lib-esm/directives/stateDirectives.js
+67 silly gunzTarPerm extractEntry lib-esm/directives/viewDirective.js
+68 silly gunzTarPerm extractEntry lib-esm/directives/stateDirectives.d.ts
+69 silly gunzTarPerm extractEntry lib-esm/directives/stateDirectives.js.map
+70 silly gunzTarPerm extractEntry lib-esm/directives/viewDirective.d.ts
+71 silly gunzTarPerm extractEntry lib-esm/directives/viewDirective.js.map
+72 silly gunzTarPerm extractEntry lib-esm/interface.js.map
+73 silly gunzTarPerm extractEntry lib-esm/legacy/resolveService.js
+74 silly gunzTarPerm extractEntry lib-esm/legacy/stateEvents.js
+75 silly gunzTarPerm extractEntry lib-esm/legacy/resolveService.d.ts
+76 silly gunzTarPerm extractEntry lib-esm/legacy/resolveService.js.map
+77 silly gunzTarPerm extractEntry lib-esm/legacy/stateEvents.d.ts
+78 silly gunzTarPerm extractEntry lib-esm/legacy/stateEvents.js.map
+79 silly gunzTarPerm extractEntry lib-esm/locationServices.d.ts
+80 silly gunzTarPerm extractEntry lib-esm/index.d.ts
+81 silly gunzTarPerm extractEntry lib-esm/locationServices.js.map
+82 silly gunzTarPerm extractEntry lib-esm/services.d.ts
+83 silly gunzTarPerm extractEntry lib-esm/angular.d.ts
+84 silly gunzTarPerm extractEntry lib-esm/services.js.map
+85 silly gunzTarPerm extractEntry lib-esm/stateFilters.d.ts
+86 silly gunzTarPerm extractEntry lib-esm/index.js.map
+87 silly gunzTarPerm extractEntry lib-esm/stateFilters.js.map
+88 silly gunzTarPerm extractEntry lib-esm/stateProvider.d.ts
+89 silly gunzTarPerm extractEntry lib-esm/injectables.d.ts
+90 silly gunzTarPerm extractEntry lib-esm/stateProvider.js.map
+91 silly gunzTarPerm extractEntry lib-esm/statebuilders/onEnterExitRetain.js
+92 silly gunzTarPerm extractEntry lib-esm/statebuilders/views.js
+93 silly gunzTarPerm extractEntry lib-esm/statebuilders/onEnterExitRetain.d.ts
+94 silly gunzTarPerm extractEntry lib-esm/statebuilders/onEnterExitRetain.js.map
+95 silly gunzTarPerm extractEntry lib-esm/statebuilders/views.d.ts
+96 silly gunzTarPerm extractEntry lib-esm/statebuilders/views.js.map
+97 silly gunzTarPerm extractEntry lib-esm/templateFactory.d.ts
+98 silly gunzTarPerm extractEntry lib-esm/angular.js.map
+99 silly gunzTarPerm extractEntry lib-esm/templateFactory.js.map
+100 silly gunzTarPerm extractEntry lib-esm/urlRouterProvider.d.ts
+101 silly gunzTarPerm extractEntry lib-esm/injectables.js.map
+102 silly gunzTarPerm extractEntry lib-esm/urlRouterProvider.js.map
+103 silly gunzTarPerm extractEntry lib-esm/viewScroll.d.ts
+104 silly gunzTarPerm extractEntry lib-esm/interface.d.ts
+105 silly gunzTarPerm extractEntry lib-esm/viewScroll.js.map
+106 silly gunzTarPerm extractEntry DOCS.md
+107 silly gunzTarPerm extractEntry lib/services.js
+108 silly gunzTarPerm extractEntry lib/injectables.js
+109 silly gunzTarPerm extractEntry lib/interface.js
+110 silly gunzTarPerm extractEntry lib/locationServices.js
+111 silly gunzTarPerm extractEntry lib/index.js
+112 silly gunzTarPerm extractEntry lib/stateFilters.js
+113 silly gunzTarPerm extractEntry lib/stateProvider.js
+114 silly gunzTarPerm extractEntry lib/templateFactory.js
+115 silly gunzTarPerm extractEntry lib/urlRouterProvider.js
+116 silly gunzTarPerm extractEntry lib/viewScroll.js
+117 silly gunzTarPerm extractEntry lib/angular.js
+118 silly gunzTarPerm extractEntry lib/directives/stateDirectives.js
+119 silly gunzTarPerm extractEntry lib/directives/viewDirective.js
+120 silly gunzTarPerm extractEntry lib/directives/stateDirectives.d.ts
+121 silly gunzTarPerm extractEntry lib/directives/stateDirectives.js.map
+122 silly gunzTarPerm extractEntry lib/directives/viewDirective.d.ts
+123 silly gunzTarPerm extractEntry lib/directives/viewDirective.js.map
+124 silly gunzTarPerm extractEntry lib/interface.js.map
+125 silly gunzTarPerm extractEntry lib/legacy/resolveService.js
+126 silly gunzTarPerm extractEntry lib/legacy/stateEvents.js
+127 silly gunzTarPerm extractEntry lib/legacy/resolveService.d.ts
+128 silly gunzTarPerm extractEntry lib/legacy/resolveService.js.map
+129 silly gunzTarPerm extractEntry lib/legacy/stateEvents.d.ts
+130 silly gunzTarPerm extractEntry lib/legacy/stateEvents.js.map
+131 silly gunzTarPerm extractEntry lib/locationServices.d.ts
+132 silly gunzTarPerm extractEntry lib/index.d.ts
+133 silly gunzTarPerm extractEntry lib/locationServices.js.map
+134 silly gunzTarPerm extractEntry lib/services.d.ts
+135 silly gunzTarPerm extractEntry lib/angular.d.ts
+136 silly gunzTarPerm extractEntry lib/services.js.map
+137 silly gunzTarPerm extractEntry lib/stateFilters.d.ts
+138 silly gunzTarPerm extractEntry lib/index.js.map
+139 silly gunzTarPerm extractEntry lib/stateFilters.js.map
+140 silly gunzTarPerm extractEntry lib/stateProvider.d.ts
+141 silly gunzTarPerm extractEntry lib/injectables.d.ts
+142 silly gunzTarPerm extractEntry lib/stateProvider.js.map
+143 silly gunzTarPerm extractEntry lib/statebuilders/onEnterExitRetain.js
+144 silly gunzTarPerm extractEntry lib/statebuilders/views.js
+145 silly gunzTarPerm extractEntry lib/statebuilders/onEnterExitRetain.d.ts
+146 silly gunzTarPerm extractEntry lib/statebuilders/onEnterExitRetain.js.map
+147 silly gunzTarPerm extractEntry lib/statebuilders/views.d.ts
+148 silly gunzTarPerm extractEntry lib/statebuilders/views.js.map
+149 silly gunzTarPerm extractEntry lib/templateFactory.d.ts
+150 silly gunzTarPerm extractEntry lib/angular.js.map
+151 silly gunzTarPerm extractEntry lib/templateFactory.js.map
+152 silly gunzTarPerm extractEntry lib/urlRouterProvider.d.ts
+153 silly gunzTarPerm extractEntry lib/injectables.js.map
+154 silly gunzTarPerm extractEntry lib/urlRouterProvider.js.map
+155 silly gunzTarPerm extractEntry lib/viewScroll.d.ts
+156 silly gunzTarPerm extractEntry lib/interface.d.ts
+157 silly gunzTarPerm extractEntry lib/viewScroll.js.map
+158 silly gunzTarPerm extractEntry CONTRIBUTING.md
+159 silly gunzTarPerm extractEntry migrate/migratewarn.js
+160 silly gunzTarPerm extractEntry migrate/migrate.json
+161 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+162 silly gunzTarPerm extractEntry release/angular-ui-router.js
+163 silly gunzTarPerm extractEntry release/angular-ui-router.min.js
+164 silly gunzTarPerm extractEntry release/ui-router-angularjs.min.js
+165 silly gunzTarPerm extractEntry release/resolveService.js
+166 silly gunzTarPerm extractEntry release/ui-router-angularjs.js
+167 silly gunzTarPerm extractEntry release/resolveService.min.js
+168 silly gunzTarPerm extractEntry release/stateEvents.min.js
+169 silly gunzTarPerm extractEntry release/stateEvents.js
+170 silly gunzTarPerm extractEntry release/angular-ui-router.js.map
+171 silly gunzTarPerm extractEntry release/stateEvents.js.map
+172 silly gunzTarPerm extractEntry release/resolveService.min.js.map
+173 silly gunzTarPerm extractEntry release/stateEvents.min.js.map
+174 silly gunzTarPerm extractEntry release/resolveService.js.map
+175 silly gunzTarPerm extractEntry release/ui-router-angularjs.js.map
+176 silly gunzTarPerm extractEntry release/angular-ui-router.min.js.map
+177 silly gunzTarPerm extractEntry release/ui-router-angularjs.min.js.map
+178 silly gunzTarPerm extractEntry CHANGELOG.md
+179 silly gunzTarPerm extractEntry stats.html
+180 silly gunzTarPerm extractEntry yarn.lock
+181 silly lockFile 48a1a51b-e-node-modules-angular-ui-router tar:///home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router
+182 silly lockFile 48a1a51b-e-node-modules-angular-ui-router tar:///home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router
+183 silly lockFile b4ee228f-ular-ui-router-1-0-3-package-tgz tar:///home/bridgeit/.npm/angular-ui-router/1.0.3/package.tgz
+184 silly lockFile b4ee228f-ular-ui-router-1-0-3-package-tgz tar:///home/bridgeit/.npm/angular-ui-router/1.0.3/package.tgz
+185 info preinstall angular-ui-router@1.0.3
+186 verbose readDependencies using package.json deps
+187 verbose readDependencies using package.json deps
+188 verbose cache add [ '@uirouter/core@5.0.3', null ]
+189 verbose cache add name=undefined spec="@uirouter/core@5.0.3" args=["@uirouter/core@5.0.3",null]
+190 verbose parsed url { protocol: null,
+190 verbose parsed url   slashes: null,
+190 verbose parsed url   auth: null,
+190 verbose parsed url   host: null,
+190 verbose parsed url   port: null,
+190 verbose parsed url   hostname: null,
+190 verbose parsed url   hash: null,
+190 verbose parsed url   search: null,
+190 verbose parsed url   query: null,
+190 verbose parsed url   pathname: '@uirouter/core@5.0.3',
+190 verbose parsed url   path: '@uirouter/core@5.0.3',
+190 verbose parsed url   href: '@uirouter/core@5.0.3' }
+191 verbose cache add name="" spec="uirouter/core@5.0.3" args=["","uirouter/core@5.0.3"]
+192 verbose parsed url { protocol: null,
+192 verbose parsed url   slashes: null,
+192 verbose parsed url   auth: null,
+192 verbose parsed url   host: null,
+192 verbose parsed url   port: null,
+192 verbose parsed url   hostname: null,
+192 verbose parsed url   hash: null,
+192 verbose parsed url   search: null,
+192 verbose parsed url   query: null,
+192 verbose parsed url   pathname: 'uirouter/core@5.0.3',
+192 verbose parsed url   path: 'uirouter/core@5.0.3',
+192 verbose parsed url   href: 'uirouter/core@5.0.3' }
+193 verbose cache add name="uirouter/core" spec="5.0.3" args=["uirouter/core","5.0.3"]
+194 verbose parsed url { protocol: null,
+194 verbose parsed url   slashes: null,
+194 verbose parsed url   auth: null,
+194 verbose parsed url   host: null,
+194 verbose parsed url   port: null,
+194 verbose parsed url   hostname: null,
+194 verbose parsed url   hash: null,
+194 verbose parsed url   search: null,
+194 verbose parsed url   query: null,
+194 verbose parsed url   pathname: '5.0.3',
+194 verbose parsed url   path: '5.0.3',
+194 verbose parsed url   href: '5.0.3' }
+195 verbose addNamed [ 'uirouter/core', '5.0.3' ]
+196 verbose addNamed [ '5.0.3', '5.0.3' ]
+197 silly lockFile 761d5dba-uirouter-core-5-0-3 uirouter/core@5.0.3
+198 verbose lock uirouter/core@5.0.3 /home/bridgeit/.npm/761d5dba-uirouter-core-5-0-3.lock
+199 verbose url raw uirouter/core/5.0.3
+200 verbose url resolving [ 'https://registry.npmjs.org/', './uirouter/core/5.0.3' ]
+201 verbose url resolved https://registry.npmjs.org/uirouter/core/5.0.3
+202 info trying registry request attempt 1 at 19:17:06
+203 http GET https://registry.npmjs.org/uirouter/core/5.0.3
+204 http 404 https://registry.npmjs.org/uirouter/core/5.0.3
+205 silly registry.get cb [ 404,
+205 silly registry.get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+205 silly registry.get     'content-type': 'application/json',
+205 silly registry.get     'cache-control': 'max-age=0',
+205 silly registry.get     'content-length': '40',
+205 silly registry.get     'accept-ranges': 'bytes',
+205 silly registry.get     date: 'Sat, 05 Aug 2017 13:47:08 GMT',
+205 silly registry.get     via: '1.1 varnish',
+205 silly registry.get     age: '0',
+205 silly registry.get     connection: 'keep-alive',
+205 silly registry.get     'x-served-by': 'cache-sin18027-SIN',
+205 silly registry.get     'x-cache': 'MISS',
+205 silly registry.get     'x-cache-hits': '0',
+205 silly registry.get     'x-timer': 'S1501940828.755414,VS0,VE835' } ]
+206 silly lockFile 761d5dba-uirouter-core-5-0-3 uirouter/core@5.0.3
+207 silly lockFile 761d5dba-uirouter-core-5-0-3 uirouter/core@5.0.3
+208 verbose about to build /home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router
+209 info /home/bridgeit/Documents/angularProject/addEmployee/node_modules/angular-ui-router unbuild
+210 info preuninstall angular-ui-router@1.0.3
+211 info uninstall angular-ui-router@1.0.3
+212 verbose true,/home/bridgeit/Documents/angularProject/addEmployee/node_modules,/home/bridgeit/Documents/angularProject/addEmployee/node_modules unbuild angular-ui-router@1.0.3
+213 info postuninstall angular-ui-router@1.0.3
+214 error 404 'uirouter' is not in the npm registry.
+214 error 404 You should bug the author to publish it
+214 error 404
+214 error 404 Note that you can also install from a
+214 error 404 tarball, folder, or http url, or git url.
+215 error System Linux 4.4.0-31-generic
+216 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "angular-ui-router"
+217 error cwd /home/bridgeit/Documents/angularProject/addEmployee
+218 error node -v v0.10.25
+219 error npm -v 1.3.10
+220 error code E404
+221 verbose exit [ 1, true ]
